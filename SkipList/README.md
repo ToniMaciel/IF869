@@ -2,7 +2,7 @@ O Objetivo deste exercício é implementar uma Skip List (SL) com as operações
 
 A figura abaixo ilustra uma SL para os valores (2, 4, 6, 8, 10, 12, 14, 16, 18) com altura 3. Uma busca pela chave X=18 começaria no head pelo nível 2, passaria para os nós de valor 6 e depois 10 ainda no nível 2, depois desceria para o nível 1 ainda no nó 10, passaria então para o nó 16 no nível 1, e desceria então para o nível 0 ainda no nó 16, onde a busca se encerraria com o cursor posicionado sobre esse precursor. Esse caminho está indicado na figura pelos numerais romanos. Repare que, neste exemplo, a busca passou por 4 nós distintos (head,6,10,16), ao invés dos oito que seriam necessários numa busca sequencial. Caso quisésssemos remover esse valor da lista, seguiríamos o mesmo caminho, e o mesmo também ocorreria caso quiséssemos inserir o valor 17. Caso o valor procurado não pertença à SL, a busca encerraria no último nó e no nível 0.
 
-<div style="overflow-x: auto;">
+<div class="overflow-table">
   +----+                            +----+                +----+                                                  +----+
   |    |                            |    |                |    |                                                  |    |
 2 | I  ---------------------------->| II ---------------->|III -------------------------------------------------->|    |
